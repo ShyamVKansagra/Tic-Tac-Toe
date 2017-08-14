@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="middle" id="menuScreen">
+    <center>
+    <p>Choose the game mode:</p>
+      <input type="button" class="btn btn-primary" name="1 Player" value="1 Player"/>
+      <input type="button" class="btn btn-primary" name="2 Players" value="2 Players" onclick="twoPlayers()"/>
+    </center>
+  </div>
+  <div class="middle" id="xoSelector">
+    <center>
+    <p>Player 1 choose any:</p>
+      <input type="button" class="btn btn-primary btn-circle" name="X" value="X" onclick="start(this)">
+      <input type="button" class="btn btn-primary btn-circle" name="O" value="O" onclick="start(this)">
+    </center>
+  </div>
+  <div class="board" id="tttBoard">
+    <p id="turn">Turn indicator</p>
+      <div class="row">
+        <input type="button" id="zerozero" onclick="nextMove(this)">
+        <input type="button" id="zeroone" onclick="nextMove(this)">
+        <input type="button" id="zerotwo" onclick="nextMove(this)">
+      </div>
+      <div class="row">
+        <input type="button" id="onezero" onclick="nextMove(this)">
+        <input type="button" id="oneone" onclick="nextMove(this)">
+        <input type="button" id="onetwo" onclick="nextMove(this)">
+      </div>
+      <div class="row">
+        <input type="button" id="twozero" onclick="nextMove(this)">
+        <input type="button" id="twoone" onclick="nextMove(this)">
+        <input type="button" id="twotwo" onclick="nextMove(this)">
+      </div>
+  </div>
+</div>
