@@ -1,0 +1,23 @@
+.middle {
+  margin-top: 25%;
+  display: block;
+}
+
+.board input{
+  height: 50px;
+  width: 50px;
+}
+
+.board {
+  margin: auto;
+  max-width: 150px;
+  padding-top: 20%;
+}
+
+#xoSelector {
+  display: none;
+}
+
+#tttBoard {
+  display: none;
+}
