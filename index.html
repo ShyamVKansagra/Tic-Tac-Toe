@@ -14,7 +14,7 @@
   <div class="middle" id="menuScreen">
     <center>
     <p>Choose the game mode:</p>
-      <input type="button" class="btn btn-primary" name="1 Player" value="1 Player"/>
+      <input type="button" class="btn btn-primary" name="1 Player" value="1 Player"  onclick="onePlayer()"/>
       <input type="button" class="btn btn-primary" name="2 Players" value="2 Players" onclick="twoPlayers()"/>
     </center>
   </div>
@@ -25,6 +25,15 @@
       <input type="button" class="btn btn-primary btn-circle" name="O" value="O" onclick="start(this)">
     </center>
   </div>
+  <div class="middle" id="xoSelector1p">
+    <center>
+    <p>Hooman, choose any:</p>
+      <input type="button" class="btn btn-primary btn-circle" name="X" value="X" onclick="start1p(this)">
+      <input type="button" class="btn btn-primary btn-circle" name="O" value="O" onclick="start1p(this)">
+    </center>
+  </div>
+  
+  <!-- 2 players board-->
   <div class="board" id="tttBoard">
     <p id="turn">Turn indicator</p>
       <div class="row">
@@ -43,7 +52,26 @@
         <input type="button" id="twotwo" onclick="nextMove(this)">
       </div>
   </div>
+  
+  <!--One Player board-->
+  <div class="board" id="tttBoard1p">
+    <p id="turn1p">Turn indicator</p>
+      <div class="row">
+        <input type="button" id="_zerozero" onclick="_nextMove(this)">
+        <input type="button" id="_zeroone" onclick="_nextMove(this)">
+        <input type="button" id="_zerotwo" onclick="_nextMove(this)">
+      </div>
+      <div class="row">
+        <input type="button" id="_onezero" onclick="_nextMove(this)">
+        <input type="button" id="_oneone" onclick="_nextMove(this)">
+        <input type="button" id="_onetwo" onclick="_nextMove(this)">
+      </div>
+      <div class="row">
+        <input type="button" id="_twozero" onclick="_nextMove(this)">
+        <input type="button" id="_twoone" onclick="_nextMove(this)">
+        <input type="button" id="_twotwo" onclick="_nextMove(this)">
+      </div>
+  </div>
 </div>
-
 </body>
 </html>

@@ -14,10 +14,10 @@
   padding-top: 20%;
 }
 
-#xoSelector {
+#xoSelector,#xoSelector1p {
   display: none;
 }
 
-#tttBoard {
+#tttBoard,#tttBoard1p {
   display: none;
 }
